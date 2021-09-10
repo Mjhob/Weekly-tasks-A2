@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>JavaScriptTesting
+    </title>
+
+</head>
+
+<header>
+    
+    <h1 style="font-family: monospace; font-size: x-large;">Hello JavaScript</h1>
+</header>
+
+<body style = "background-color: lightcoral">
+
+ <button onclick="document.getElementById('myImage').src='https://media.giphy.com/media/WYEWpk4lRPDq0/giphy.gif'">GO BACK</button>
+    <img id="myImage" src="https://media.giphy.com/media/WYEWpk4lRPDq0/giphy.gif" style="width:100px">
+    
+    <button onclick="document.getElementById('myImage').src='https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/giphy.gif'">Kill the kitty</button>
+
+
+
+
+
+<p id = item></p>
+<p id = weeks></p>
+<p id = caps></p>
+
+
+<script>
+    const softdrinks = ["Coke", "Solo", "Dr Pepa", "Sprite"];
+    document.getElementById('item').innerHTML = softdrinks;
+    const days = 365;
+    const weeks = 7;
+    var weeksInYear = days/weeks;
+    document.getElementById('weeks').innerHTML = weeksInYear.toString();
+
+
+
+</script>
+
+<section id="button-app">
+    <h1>{{count}}</h1>
+    <button @click="addCountPlus" >You clicked me {{ count }} times.</button>
+</section>
+
+
+<div id = "animalApp">
+    <p v-html = "renderAnimalName">
+    {{animalName}}
+    </p>
+    <p v-html = "renderAnimalDescription">
+        {{animalDescription}}
+    </p>
+    <img v-img = "animalPic" style = "width: 100px; height:150px" src = "images.jpg/uriel-soberanes-uYcEkcREK7E-unsplash.jpg">
+</div>
+
+<div id="app">
+    {{ message }}
+  </div>
+
+
+
+</body>
+<script type="text/javascript" src="https://unpkg.com/vue@next"></script>
+<script src = "index.js"></script>
+
+</html>
