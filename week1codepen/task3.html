@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <script src=<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>Student Score listing</title>
+        <h1 style="color:aqua; text-align: center;">Student score listing</h1>
+    </head>
+    <body>
+<script type ="text/javascript">
+var name;
+name = window.prompt("Enter you name");
+document.writeln("<h1> Hello "+ name + ",");
+    document.writeln("<br> Welcome to student scores </h1>");
+</script>
+<p style ="position: center">
+    <input type="button" onclick="alert('Bellow is a list of Timmys class scores, the total score and average score')" value="click for info">
+    
+</p>
+
+    </body>
+<body>
+    <p id="display"></p>
+
+        <script>
+            var subjects, outputText, sLength, i;
+
+            subjects = ["Biology: 76%", "Maths: 95%", "English: 54%", "History: 99%", "Physics: 40%", "Total score: 364/500", "Average score: 72.8%"];
+
+            sLength = subjects.length;
+
+            outputText = "<ul>";
+
+            for (i = 0; i < sLength; i++) 
+            {
+                outputText += "<li>" + subjects[i] + "</li>";
+            }
+
+            outputText += "</ul>";
+
+            document.getElementById("display").innerHTML = outputText;
+        </script>
+</body>
+
+<img src ="https://www.pngkit.com/png/full/22-220472_school-png-free-download-school-png.png">
+
+
+</html>
