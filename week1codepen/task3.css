@@ -1,0 +1,19 @@
+body{
+    background: lightsalmon;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    position: center;
+}
+p{
+    margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:large;
+
+}
+img{
+    margin-left: 900px;
+
+}
