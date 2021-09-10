@@ -1,0 +1,493 @@
+/* STYLES FOR INDEX.HTML */
+
+body{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+/* nav bar*/
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+}
+.left-side{
+    display: flex;
+
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    padding: 10px;
+
+}
+
+.nav-link-wrapper a {
+    color: rgb(184, 184, 184);
+    text-decoration: none;
+    transition: color 0.5s;
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+.nav-link-wrapper:hover{
+    border-bottom:1px solid white;
+
+}
+
+.nav-link-wrapper a:hover{
+    color: white;
+    
+}
+
+.active-nav-link{
+    border-bottom: 1px solid white;
+}
+.active-nav-link a{
+    color: white !important;
+    
+}
+
+@media (min-width: 700px)  /*This will make the website dynamic and put a break point at 700px*/
+{
+
+.main-wrapper{
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+
+/*Title styles*/
+
+.main-title{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 1440px;
+    height: 141px;
+    left: 0px;
+    top:273px;
+    font-size: 120px;
+    line-height:155px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    right:0px;
+
+
+}
+.sub-title{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 1440px;
+    height: 141px;
+    left: 0px;
+    top:400px;
+    font-size: 30px;
+    line-height:155px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    right: 0px;
+
+
+}
+
+/* Search bar*/
+
+.search-wrapper{
+    display: flex;
+    height: 50px;
+    position: relative;
+    top: 550px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 140px;
+    padding-right: 140px;
+
+}
+input{
+    background-color: white;
+    border: none;
+    border-radius: 1em; 
+    height: 100%;
+    outline: none;
+    padding-inline-end: 44px;
+    font-size: 25px;
+    padding-inline-start: 52px;
+    position: relative;
+    width: 100%;
+   
+}
+
+.search-icon-wrapper{
+    height: 100%;
+    left: 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* main buttons*/
+
+.main-buttons-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10em;
+    justify-items: center;
+    position: relative;
+    top: 500px;
+}
+.flights-wrapper a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding:2em;
+    border-radius: 1em;
+}
+.destinations-wrapper a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding:2em;
+    border-radius: 1em;
+}
+.events-wrapper a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding:2em;
+    border-radius: 1em;
+}
+}
+
+/* Bellow is the smaller screen */
+
+@media (max-width: 699px)
+{
+    .main-wrapper{
+        display: flex;
+        grid-template-columns: 1fr; 
+    }
+
+    .main-title{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 1440px;
+        height: 141px;
+        left: 0px;
+        top:150px;
+        font-size: 100px;
+        line-height:155px;
+        align-items: center;
+        text-align: center;
+        color: white;
+        max-width: 100%;
+        right:0px;
+    
+    
+    }
+    .sub-title{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 1440px;
+        height: 141px;
+        left: 0px;
+        top:350px;
+        font-size: 15px;
+        line-height:155px;
+        align-items: center;
+        text-align: center;
+        color: white;
+        max-width: 100%;
+        right: 0px;
+    
+    
+    }
+
+    /*Smaller search*/
+
+    .search-wrapper{
+    display: flex;
+    height: 50px;
+    position: relative;
+    top: 500px;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 10px;
+    width: 100%;
+    justify-content: center;
+    }
+    input{
+        background-color: white;
+        border: none;
+        border-radius: 1em;
+        height: 75%;
+        outline: none;
+        font-size: 18px;
+        padding-inline-start: 20px;
+        position: relative;
+        left: 70px;
+
+    }
+
+    .main-buttons-wrapper{
+        display: grid;
+        gap: 10rem;
+        /*margin: 10em;*/
+        grid-auto-flow: row;
+        justify-items: center;
+        position: relative;
+        top: 800px;
+        right:200px;
+        width:100%;
+        
+    }
+    .flights-wrapper a{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        padding:2em;
+        border-radius: 1em;
+    }
+    .destinations-wrapper a{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        padding:2em;
+        border-radius: 1em;
+    }
+    .events-wrapper a{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        padding:2em;
+        border-radius: 1em;
+    }
+}
+
+/* Destinations.html styles:*/
+
+/* Break point set at 750px */
+
+@media(min-width:750px){
+
+.top-items-wrapper{
+    display: grid;
+    position: relative;
+}
+
+.img-background{
+    
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    font-size: 50px;
+    color: white;
+    flex-direction: column;
+    left: 100px;
+    right: 100px;
+
+}
+
+/* Bellow sets the image the links to be in two columns */
+
+.destination-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.destination-item-wrapper{
+    position: relative;
+}
+
+.destination-img-background{
+    height: 625px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: 100%;
+    text-align: center;
+    left: 30%;
+    right: 30%;
+    bottom: 50%;
+    font-size: 80px;
+}
+.bottom-item-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    height: 600px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bottom-item-wrapper img{
+    width: 140px;
+    height: 135px;
+    top: 100px; 
+
+}
+
+.company-text{
+    color:white;
+    font-size: 50px;
+}
+
+.img-text-wrapper a{
+    color:transparent;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.img-text-wrapper a:hover{
+    color:white
+}
+}
+
+/* In the smaller screen size, the images will be in one column - more friendly for smaller screens. */
+
+@media(max-width: 749px)
+{
+    .top-items-wrapper{
+        display: grid;
+        position: relative;
+    }
+    
+    .img-background{
+        
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main-img-text-wrapper{
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        font-size: 40px;
+        color: white;
+        flex-direction: column;
+        left: 100px;
+        right: 100px;
+    
+    }
+
+    /* Columns set here */
+    
+    .destination-items-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .destination-item-wrapper{
+        position: relative;
+    }
+    
+    .destination-img-background{
+        height: 625px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .img-text-wrapper{
+        position: absolute;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: 100%;
+        text-align: center;
+        left: 30%;
+        right: 30%;
+        bottom: 50%;
+        font-size: 80px;
+    }
+    .bottom-item-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        height: 600px;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .bottom-item-wrapper img{
+        width: 140px;
+        height: 135px;
+        top: 100px; 
+    
+    }
+    
+    .company-text{
+        color:white;
+        font-size: 50px;
+    }
+    
+    .img-text-wrapper a{
+        color:transparent;
+        text-decoration: none;
+        transition: color 0.5s;
+    }
+    .img-text-wrapper a:hover{
+        color:white
+    }
+}
+
+/* Here is a third smaller break point to fix sizing issues */
+
+@media(max-width: 510px){
+    .main-img-text-wrapper{
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        font-size: 25px;
+        color: white;
+        flex-direction: column;
+        left: 50px;
+        right: 50px;
+    
+    }
+
+}
+
+.add-planet-item input
+{
+    display: flex;
+    height: 50px;
+    position: relative;
+    align-items: left;
+    width: 100%;
+    justify-content: left;
+}
+.add-planet-item button
+{
+    display: flex;
+}
