@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+</head>
+<body>
+<!-- week 7 -->
+    <div id="comments-app">
+        <child :comment="comment" likes = "likes"></child>
+      </div>
+
+
+      <div id="v-model-example" class="demo">
+        <p>First name: {{ firstName }}</p>
+        <p>Last name: {{ lastName }}</p>
+        <user-name
+         v-model:first-name="firstName"
+         v-model:last-name="lastName"
+       ></user-name>
+     </div>
+
+
+    <!-- <script src = "main.js"></script> -->
+    <script src = "app.js"></script>
+</body>
+</html>
