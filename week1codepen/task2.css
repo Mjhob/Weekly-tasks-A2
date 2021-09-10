@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+  
+}
+h1{
+  color: lime;
+  text-align: center;
+}
+p{
+  color: white;
+  text-align: center;
+  
+}
+
+a{
+  color: white
+}
+h1 {border-style: solid;
+  border-color: lime;
+}
+p {border-style: dotted;
+  border-color: white;
+}
+img {border-style: solid;
+  border-color: lime;
+  
+}
+
+h2{
+  color: pink;
+  text-align: center;
+}
+
+img{
+  height: 500px;
+  margin-left: 15em;
+}
+
+button{
+  position: relative;
+}
